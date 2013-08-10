@@ -10,7 +10,7 @@ up to 10 max
 
 to block port 80 and 22
 
-$ sudo insmod drop.ko ports=80,22
+$ sudo insmod firewall.ko ports=80,22
 
 
 to see output
@@ -18,5 +18,5 @@ to see output
 $ tail -f /var/log/kern.log
 
 to stop the firewall
-$ sudo rmmod drop
+$ sudo rmmod firewall 
 
